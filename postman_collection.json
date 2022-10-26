@@ -1,0 +1,576 @@
+{
+	"info": {
+		"_postman_id": "abfd838c-b9d6-47e7-851c-caaa27130f43",
+		"name": "SP_IT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "JeffersonDickenson",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "jeff@email.com",
+							"type": "text"
+						},
+						{
+							"key": "contact",
+							"value": "98564765",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "jeffff8888",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "Customer",
+							"type": "text"
+						},
+						{
+							"key": "profile_pic_url",
+							"value": "https://www.googleimage.com/jeff.jpg",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8081/users/",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/users/",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:8081/users/99",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"users",
+						"99"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "NewJeff",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "newjeff@jeffmail.com",
+							"type": "text"
+						},
+						{
+							"key": "contact",
+							"value": "98743214",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "newJeffnewMe",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "Admin",
+							"type": "text"
+						},
+						{
+							"key": "profile_pic_url",
+							"value": "www.jeff.com/newjeff.jpg",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8081/users/99/",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"users",
+						"99",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "category",
+							"value": "Phones",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Essential devices for daily life",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8081/category",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/category",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "IPhone 13",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Great size and performance phone",
+							"type": "text"
+						},
+						{
+							"key": "categoryid",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "brand",
+							"value": "Apple",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "799",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8081/product/",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"product",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/product/99",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"product",
+						"99"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "9",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/product/99/",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"product",
+						"99",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "10",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userid",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "rating",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "review",
+							"value": "extremely good, worth 100% id buy another",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8081/product/3/review/",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"product",
+						"3",
+						"review",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "11",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/product/99/reviews",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"product",
+						"99",
+						"reviews"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "13",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/discounts",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"discounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "12",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "categoryids",
+							"value": "1,2,3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8081/interest/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"interest",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "16",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "discountpercent",
+							"value": "15",
+							"type": "text"
+						},
+						{
+							"key": "starttime",
+							"value": "tomorrow lor",
+							"type": "text"
+						},
+						{
+							"key": "endtime",
+							"value": "next week",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8081/discounts/99/",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"discounts",
+						"99",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "17",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/discounts/99",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"discounts",
+						"99"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "18",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/jayde/OneDrive - Singapore Polytechnic/Desktop/BED/CA1/sampleImages/ipad.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8081/product/99",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"product",
+						"99"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "19",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/product/1/png",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"product",
+						"1",
+						"png"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8.5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/product/",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"product",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "14",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/discounts/product/99",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"discounts",
+						"product",
+						"99"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "15",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/discounts/99",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"discounts",
+						"99"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
